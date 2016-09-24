@@ -1,6 +1,7 @@
 # NetworkUtil
 简单封装HttpUrlConnection
 * 封装了get和post方法的请求
+* 请求参数的封装PostBody
 * 设置了Cookie的自动保存
 * 获取过程中可以选择是否带进度监听
 
