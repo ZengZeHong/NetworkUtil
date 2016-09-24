@@ -6,12 +6,13 @@
 
 eg:
 
-get
+get  
+
             NetworkUtil.getInstance().get("http://www.baidu.com", new ResultListener() {
-            @Override
-            public void onResultSuccess(String success) {
+             @Override
+             public void onResultSuccess(String success) {
                 Log.e(TAG, "onResultSuccess: " + success);
-            }
+             }
 
             @Override
             public void onResultFail(String fail) {
