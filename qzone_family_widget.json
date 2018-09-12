@@ -1,0 +1,124 @@
+{
+  "Area": "com.qzone.canvasui.widget.LinearAreaLayout",
+  "shell": {
+    "id": "qzone_widget_layout",
+    "width": "wrap_content",
+    "height": "wrap_content",
+    "gravity": "vertical"
+  },
+  "children": [
+    {
+      "Area": "com.qzone.canvasui.widget.RelativeAreaLayout",
+      "shell": {
+        "width": "wrap_content",
+        "height": "wrap_content"
+      },
+      "children": [
+        {
+          "Area": "com.qzone.canvasui.widget.AsyncCanvasImageArea",
+          "shell": {
+            "id": "image_widget_logo",
+            "width": "37dp",
+            "height": "30dp",
+            "centerVertical": true
+          }
+        },
+        {
+          "Area": "com.qzone.canvasui.widget.RelativeAreaLayout",
+          "shell": {
+            "toRightOf": "image_widget_logo",
+            "width": "wrap_content",
+            "height": "wrap_content",
+            "centerVertical": true
+          },
+          "children": [
+            {
+              "Area": "com.qzone.canvasui.widget.CanvasTextArea",
+              "shell": {
+                "id": "text_widget_rank",
+                "width": "wrap_content",
+                "height": "wrap_content",
+                "text": "全球排名",
+                "text_size": 11,
+                "margin": "10dp,0dp,0dp,0dp",
+                "text_color": "#FFFFFF"
+              }
+            },
+            {
+              "Area": "com.qzone.canvasui.widget.CanvasTextArea",
+              "shell": {
+                "id": "text_widget_rank_value",
+                "toRightOf": "text_widget_rank",
+                "width": "wrap_content",
+                "height": "wrap_content",
+                "text": "21",
+                "text_size": 11,
+                "margin": "10dp,0dp,0dp,0dp",
+                "text_color": "#F9F900"
+              }
+            },
+            {
+              "Area": "com.qzone.canvasui.widget.CanvasTextArea",
+              "shell": {
+                "id": "text_widget_visitor",
+                "below": "text_widget_rank",
+                "width": "wrap_content",
+                "height": "wrap_content",
+                "text": "今日访客",
+                "text_size": 11,
+                "margin": "10dp,0dp,0dp,0dp",
+                "text_color": "#FFFFFF"
+              }
+            },
+            {
+              "Area": "com.qzone.canvasui.widget.CanvasTextArea",
+                "shell": {
+                "id": "text_widget_visitor_value",
+                "below": "text_widget_rank",
+                "toRightOf": "text_widget_visitor",
+                "text": "240",
+                "width": "wrap_content",
+                "height": "wrap_content",
+                "text_size": 11,
+                "margin": "10dp,0dp,0dp,0dp",
+                "text_color": "#F9F900"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Area": "com.qzone.canvasui.widget.RelativeAreaLayout",
+      "shell": {
+        "width": "wrap_content",
+        "height": "wrap_content"
+      },
+      "children": [
+        {
+          "Area": "com.qzone.canvasui.widget.CanvasTextArea",
+          "shell": {
+            "id": "text_widget_qzone_family",
+            "width": "wrap_content",
+            "height": "wrap_content",
+            "text": "空间家族",
+            "centerVertical": true,
+            "text_size": 10,
+            "text_color": "#FFFFFF"
+          }
+        },
+        {
+          "Area": "com.qzone.canvasui.widget.AsyncCanvasImageArea",
+          "shell": {
+            "id": "image_widget_qzone_family_level",
+            "width": "33dp",
+            "height": "16dp",
+            "margin": "10dp,0dp,0dp,0dp",
+            "toRightOf": "text_widget_qzone_family",
+            "centerVertical": true
+          }
+        }
+      ]
+    }
+  ]
+}
